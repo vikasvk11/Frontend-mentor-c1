@@ -22,8 +22,12 @@ body {
     top: 20%;
     width: 80%;
     height: 60%;
-    background-image: url('./images/bg-pattern-top.svg');
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg') ;
     background-color: hsl(185, 75%, 39%);
+    background-position: top 150% left -70%, bottom 170% right -60%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+ 
 }
 
 .profile-card {
@@ -41,14 +45,14 @@ body {
 .container-flex {
     display: flex;
     flex-direction: column;
-
 }
 
 .flex-item-1 {
     flex: 0 0 99px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
     background-image: url('./images/bg-pattern-card.svg');
+    background-size: cover;
 }
 
 .flex-item-2 {
@@ -80,7 +84,6 @@ body {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
- 
 }
 
 .profile-name {
